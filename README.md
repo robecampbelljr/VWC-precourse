@@ -1,7 +1,7 @@
 # VWC-precourse
-Vets Who Code pre-course work 
+[Vets Who Code pre-course work](https://dev.to/vetswhocode/vets-who-code-pre-work-1gld) 
 
-This project was prepared as proof of understanding of the following concepts: 
+This project was prepared as proof of understanding of the following basic programming concepts: 
 * Variable assignment
 * Basic Math operations
 * Strings
