@@ -3,7 +3,7 @@
 ## Table of Contents
 [Purpose of Project][Purpose]
 
-[Purpose]This project was prepared as proof of understanding of the following basic programming concepts: 
+[Purpose]: This project was prepared as proof of understanding of the following basic programming concepts: 
 * Variable assignment
 * Basic Math operations
 * Strings
