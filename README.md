@@ -70,25 +70,27 @@ _Example_
 * '**': Exponentiation raises a number to a certain power.
 
 ## Strings
-A strign is a series of carachters contained withing a set of single ('') or double ("") quotes. A string, like and array, is 0 indexed. This means that we can access any character within a string by using that characters index.
+A strign is a series of carachters contained withing a set of single ('') or double ("") quotes. A string is 0 indexed. This means that we can access any character within a string by using that characters index.
 
 _Example_
 
 ```javascript
-let name = "Robert"; // Declare a variable 'name' and assign it the value "Robert"
-console.log(name[0]); // Logs 'R' to the console
-console.log(name[1]); // Logs 'o' to the console
+let string = "Supercalifragilisticexpialidoscious";
+console.log(name[0]); // Logs 'S' to the console
+console.log(name[1]); // Logs 'u' to the console
 // etc.
 ```
 
 Strigns have a plethora of methods availabe to perform operations on that string. Some of the most popular are:
 * **'.length'**: '.length' returns the length of the string including spaces.
+
 _Example_
 ```javascript
 let string = "Supercalifragilisticexpialidoscious";
 console.log(string.length); // Logs '35'
 ```
 * **'.slice(start, end)'**: '.slice(start, end)' returns a portion of the string starting at the index 'start' and ends (but does NOT include) the index 'end'.
+
 _Example_
 ```javascript
 let string = "Supercalifragilisticexpialidoscious";
@@ -96,6 +98,11 @@ console.log(string.slice(0, 5)); // Logs 'Super' to the console
 ```
 * **'.split(separater)'**: '.split(separator)' splits the string by the 'separator' and returns an array with each portion at a different index.
 
+_Example_
+```javascript
+let string = "Supercalifragilisticexpialidoscious";
+console.log(string.split('i')); // Logs ['Supercal', 'frag', 'l', 'st', 'cexp', 'al', 'dosc', 'ous']
+```
 ## Conditional logic
 ## Loops
 ## Functions
