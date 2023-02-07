@@ -33,6 +33,7 @@ In JavaScript there are three ways to ***declaring*** a variable:
 * **const**: Variables declared with 'const' are also **block-scoped**. _Const_ varibales cannot be changed after they have been declared. Note: If the 'const' variable is an object or an array, its properties or elements can still be modified.
 
 _Example_
+
     ``` javascript
     if (true) {
       var hw = 'Hello World!';
@@ -50,6 +51,7 @@ _Example_
  To ***assign*** a variable, we follow the ***declaration*** with the '=' sign followed by the value. We can ***assign*** multiple variables in the same line, or use multiple lines.
 
  _Example_
+
     ``` javascript
     let x = 1, y = 2, z = 3; // Declare and assign multiple on same line
 
