@@ -249,7 +249,7 @@ let car = {
       this.position += 1;
       console.log(`Position is now '${this.position}'`)
     } else {
-      console.log(`You must start your car first!`);
+      console.log('You must start your car first!');
     }
   },
   startCar: function() {
@@ -260,10 +260,10 @@ let car = {
 
 console.log(car.color); // Logs 'color' prperty 'red' to the console
 console.log(car['start']); // Logs 'false'
-car.go(); // Logs `You must start your car first!`
+car.go(); // Logs 'You must start your car first!'
 car.startCar(); // Logs 'Car has started!'
 car.go(); // Logs `Position is now '1'`
-car.go(); // Logs `Position is now '1'`
+car.go(); // Logs `Position is now '2'`
 car.go(); // Logs `Position is now '3'`
 ```
 We are able to create properties, and methods to manipulate those properties. See [MDN Objects] documentation for a more indepth discussion on the subject.
