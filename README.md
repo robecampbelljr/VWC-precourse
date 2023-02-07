@@ -27,10 +27,10 @@ The seven basic data types in JavaScript are:
 Assigning a variable is to create a container in memory pertaining to one of these basic data structures (or complex data structure)
 that can but called or manipulated within a program.
   In JavaScript there are two methods to assigning a variable:
-    * _*var*_:  _*var*_'s are *function scoped* meaning the variable is [hoisted][hoist] to the top of the function. This allows access to the variable before it is defined.
-    * _*let*_: _*let*_'s are *block scoped* meaning they are *NOT* [hoisted][hoist]. Thus are only available withing the block in which they were declared.
-    *Ex.*
-    ```javascript
+  * _*var*_:  _*var*_'s are *function scoped* meaning the variable is [hoisted][hoist] to the top of the function. This allows access to the variable before it is defined.
+  * _*let*_: _*let*_'s are *block scoped* meaning they are *NOT* [hoisted][hoist]. Thus are only available withing the block in which they were declared.
+  *Ex.*
+    ``` javascript
     if (true) {
       var hw = 'Hello World!';
     }
