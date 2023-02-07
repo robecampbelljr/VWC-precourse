@@ -25,7 +25,7 @@ The seven basic data types in JavaScript are:
 7. Symbol: New data type as of ES6. Used as Object property key. Every Symbol is unique and cannot be modified or overwritten.
 
 Assigning a variable is to create a container in memory pertaining to one of these basic data structures (or complex data structure)
-that can but called or manipulated within a program.
+that can be called or manipulated within a program.
   In JavaScript there are two methods to assigning a variable:
   * _*var*_:  _*var*_'s are *function scoped* meaning the variable is [hoisted] to the top of the function. This allows access to the variable before it is defined.
   * _*let*_: _*let*_'s are *block scoped* meaning they are *NOT* [hoisted]. Thus are only available within the block in which they were declared.
