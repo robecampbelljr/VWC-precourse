@@ -212,7 +212,7 @@ for (let i = 0; i < array.length; i++) {
 In the above code we reference the property '.length' of the array. This property returns the length of the array. This count, unlike the index, starts at '1'.
 
 Arrays also have a wide varaiety of methods available for accessing and processing the data inside. Some of the most common are:
-* **'.forEach((element, index, array) => {callBack})'**: '.forEach((element, index, array) => {callBack})' steps through the array (much like the for loop above), and applied the callBack to the current element.
+* **'.forEach((element, index, array) => {callBack})'**: '.forEach((element, index, array) => {callBack})' steps through the array (much like the for loop above), and applies the callBack to the current element.
 
 _Example_
 ```javascript
@@ -238,7 +238,37 @@ console.log(squaredNums); // Logs '[1, 4, 9]'
 
 There are several other [array methods] available for use.
 ## Objects (properties/methods)
+Objects are one of the basic data types in JavaScript. Objects access properties or methods through a key/value pairing system. Each 'key' is a string that allows access to the coresponding property/method as follows:
+```javascript
+let car = {
+  color: 'red',
+  start: false,
+  position: 0,
+  go: function() {
+    if (this.start) {
+      this.position += 1;
+      console.log(`Position is now '${this.position}'`)
+    } else {
+      console.log(`You must start your car first!`);
+    }
+  },
+  startCar: function() {
+    this.start = true;
+    console.log('Car has started!')
+  }
+}
+
+console.log(car.color); // Logs 'color' prperty 'red' to the console
+console.log(car['start']); // Logs 'false'
+car.go(); // Logs `You must start your car first!`
+car.startCar(); // Logs 'Car has started!'
+car.go(); // Logs `Position is now '1'`
+car.go(); // Logs `Position is now '1'`
+car.go(); // Logs `Position is now '3'`
+```
+We are able to create properties, and methods to manipulate those properties. See [MDN Objects] documentation for a more indepth discussion on the subject.
 
 [hoisted]: https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
 [string methods]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 [array methods]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+[MDN Objects]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
