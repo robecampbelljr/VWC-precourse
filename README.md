@@ -34,7 +34,7 @@ In JavaScript there are three ways to ***declaring*** a variable:
 
 _Example_
 
-    ``` javascript
+    ```javascript
     if (true) {
       var hw = 'Hello World!';
     }
@@ -52,7 +52,7 @@ _Example_
 
  _Example_
 
-    ``` javascript
+    ```javascript
     let x = 1, y = 2, z = 3; // Declare and assign multiple on same line
 
     // OR
