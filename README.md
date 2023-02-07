@@ -69,7 +69,7 @@ _Example_
 * '%': Modulo returns the remainder after dividing one number by another.
 * '**': Exponentiation raises a number to a certain power.
 
-## Strings
+## Strings/String Methods
 A strign is a series of carachters contained withing a set of single ('') or double ("") quotes. A string is 0 indexed. This means that we can access any character within a string by using that characters index.
 
 _Example_
@@ -145,10 +145,100 @@ switch (expression) {
 }
 ```
 ## Loops
+Loops allow for the running of a single block of code multiple times until a condition is met. The most common loops are:
+* **'for'**: 'for' loops repeat a block of code until a condition is met.
+
+_Example_
+```javascript
+// This loop repeats while i <= 5, if it is not, the loop ends
+for (let i = 0; i <= 5; i++) {
+  console.log(i); // Logs 0\n1\n2\n3\n4\n5
+}
+```
+* **'for...in'**: 'for...in' loops are used to iterate thrugh objects and enables you to access each key and its property.
+
+_Example_
+```javascript
+let car = {
+  make: "Toyota",
+  model: "Prius",
+  year: 2023
+}
+
+for (let key in car) {
+  console.log(`${key}: ${car[key]}`); // Logs 'make: Toyota'\n'model: Prius'\n'year: 2023'
+}
+```
+* **'while'**: 'while' loops run while a certain condition is true.
+
+_Example_
+```javascript
+let haveArrived = false;
+let step = 0;
+while (!haveArrived) { // While haveArrives is false
+  step += 1; // take another step
+  if (step === 10) { // If I have taken ten steps
+    haveArrived = true; // Switch haveArrived to true
+  }
+}
+```
 ## Functions
-## Arrays
-## String/Array methods
+Functions define blocks of code that can then be referenced at any time. This allows us to repeat less code. Functions can take in **parameters** which we can then manipualte in our desired manner. When the function is invoked, we supply it with the proper arguments corresponding with its needed parameters.
+
+_Example_
+```javascript
+let add = (num1, num2) => {
+  return num1 + num2;
+}
+
+console.log(add(1, 2)); // Logs '3' to the console
+console.log(add(4, 1)); // Logs '5' to the console
+```
+
+Creating functions in this manner also has the added benefit of making our code more **readable**.
+## Arrays/Array Methods
+Arrays are a complex data type that allowe for the storage and manipulation of varios types of data.
+Syntacticly we create an array in javascript as follows:
+```javascript
+let array = [1, 'Apple', 0.5, {willILangMyFirstCodingJob: true}, [1, 2, 3]];
+```
+If we were not aware what was in the array we were receiving, we could use a for loop to log the values:
+```javascript
+let array = [1, 'Apple', 0.5, {willILangMyFirstCodingJob: true}, [1, 2, 3]];
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]); // This will log all the array values in turn except array[3] will log '[object, object]'. Why that is is out of the scope of this document.
+}
+```
+In the above code we reference the property '.length' of the array. This property returns the length of the array. This count, unlike the index, starts at '1'.
+
+Arrays also have a wide varaiety of methods available for accessing and processing the data inside. Some of the most common are:
+* **'.forEach((element, index, array) => {callBack})'**: '.forEach((element, index, array) => {callBack})' steps through the array (much like the for loop above), and applied the callBack to the current element.
+
+_Example_
+```javascript
+let nums = [1, 2, 3];
+let sum = 0;
+
+nums.forEach((number, index, nums) => {
+  sum += number;
+})
+```
+* **'.map((value) => {})'**: '.map((value) => {})' returns an array of the results of the callback function applied to each element.
+
+_Example_
+```javascript
+let nums = [1, 2, 3]
+
+let squaredNums = nums.map((number) => {
+  return number**2;
+})
+
+console.log(squaredNums); // Logs '[1, 4, 9]'
+```
+
+There are several other [array methods] available for use.
 ## Objects (properties/methods)
 
 [hoisted]: https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
 [string methods]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[array methods]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
