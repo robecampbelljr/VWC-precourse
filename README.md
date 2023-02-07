@@ -34,31 +34,31 @@ In JavaScript there are three ways to ***declaring*** a variable:
 
 _Example_
 
-    ```javascript
-    if (true) {
-      var hw = 'Hello World!';
-    }
+```javascript
+  if (true) {
+    var hw = 'Hello World!';
+  }
 
-    console.log(hw); // logs 'Hello World!' to console
+  console.log(hw); // logs 'Hello World!' to console
 
-    if (true) {
-      let gw = 'Goodbye World!'
-    }
+  if (true) {
+    let gw = 'Goodbye World!'
+  }
 
-    console.log(gw); // ReferenceError: gw is not defined
-    ```
+  console.log(gw); // ReferenceError: gw is not defined
+```
 
  To ***assign*** a variable, we follow the ***declaration*** with the '=' sign followed by the value. We can ***assign*** multiple variables in the same line, or use multiple lines.
 
  _Example_
 
-    ```javascript
-    let x = 1, y = 2, z = 3; // Declare and assign multiple on same line
+```javascript
+  let x = 1, y = 2, z = 3; // Declare and assign multiple on same line
 
-    // OR
+  // OR
 
-    let x = 1;
-    let y = 2;
-    let z = 3;
-    ```
+  let x = 1;
+  let y = 2;
+  let z = 3;
+```
 [hoisted]: https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
