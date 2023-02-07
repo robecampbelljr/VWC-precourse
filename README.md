@@ -28,8 +28,9 @@ To ***declare*** a variable to create a container in memory to which we can then
 basic data types or other complex data types (i.e. arrays). These values we ***assign*** can later be referenced, manipulated, or reassigned throughout the code.
 
 In JavaScript there are three methods to ***declaring*** a variable:
-* _**var**_:  _var_'s are *function scoped* meaning the variable is [hoisted] to the top of the function. This allows access to the variable before it is defined.
-* _**let**_: _let_'s are *block scoped* meaning they are *NOT* [hoisted]. Thus are only available within the block in which they were declared.
+* **var**:  _var_'s are **function scoped** meaning the variable is [hoisted] to the top of the function. This allows access to the variable before it is defined.
+* **let**: _let_'s are **block scoped** meaning they are *NOT* [hoisted]. Thus are only available within the block in which they were declared.
+* **const**: _const_'s are also **block scoped**. _Const_ varibales are ones that can not be changed once it has been declared (i.e. the base url for an endpoint). NOTE: if the const varialbe is an object or an array, its properties or elements can still be modified.
 
 _Example_
     ``` javascript
@@ -46,7 +47,7 @@ _Example_
     console.log(gw); // ReferenceError: gw is not defined
     ```
 
- To ***assign*** a variable, we follow the ***declaration*** with the '=' sign followed by the value. We can ***assign*** multiple variables in teh same line, or use multiple lines.
+ To ***assign*** a variable, we follow the ***declaration*** with the '=' sign followed by the value. We can ***assign*** multiple variables in the same line, or use multiple lines.
 
  _Example_
     ``` javascript
