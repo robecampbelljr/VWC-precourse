@@ -103,10 +103,52 @@ _Example_
 let string = "Supercalifragilisticexpialidoscious";
 console.log(string.split('i')); // Logs ['Supercal', 'frag', 'l', 'st', 'cexp', 'al', 'dosc', 'ous']
 ```
+There are many more [string methods] available.
+
 ## Conditional logic
+Conditional logic sets parameters that must be fulfilled in order for certain code to execute. Syntactically it is accomplished by one of the two following methods:
+* **'if(condition1)...if else(condition2)...else'**: 'if(condition1)...if else(condition2)...else' statements will only execute the code within their respective block if the coresponding conditions are met.
+
+_Example_
+```javascript
+if (iAmHandsome) {
+  // if iAmHandsome is true this code will execute
+}
+
+if (iAmNotHandsome) {
+  // if iAmNotHandsome is true this code will execute
+} else {
+  // if iAmNotHandsome is NOT true, this code will execute
+}
+
+if (everyoneIsHandsome) {
+  // if everyoneIsHandsome is true this will execute
+} else if (!everyoneIsHandsome) {
+  // if everyoneIsHandsome is NOT true this code will execute
+} else {
+  // if both conditions are not true, this code will execute
+}
+```
+* **'switch'**: 'switch' statements evaluate and expression and execute code coresponding to the result.
+
+_Example_
+```javascript
+switch (expression) {
+  case result1:
+    // Code to execute if result1 is received
+    break;
+  case result2:
+    // Code to execute is result2 is received
+    break;
+  default:
+    // Code that runs if all other results are incorrect
+}
+```
 ## Loops
 ## Functions
 ## Arrays
 ## String/Array methods
 ## Objects (properties/methods)
+
 [hoisted]: https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
+[string methods]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
