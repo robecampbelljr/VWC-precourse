@@ -2,6 +2,7 @@ import './App.css';
 import Calculator from './components/Math/calculator';
 import Mathblurb from './components/Math/math-blurb';
 import Assignmentblurb from './components/Assignment/assignment-blurb';
+import assignmentCS from './pics/assignment.png';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <h1>Variable Assignment</h1>
         <div className="presentation">
           <Assignmentblurb />
+          <img src={assignmentCS} alt="Assignment Code Snippet" />
         </div>
       </div>
       <div className="math-section">
