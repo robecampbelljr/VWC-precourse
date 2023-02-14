@@ -27,7 +27,7 @@ The seven basic data types in JavaScript are:
 To ***declare*** a variable is to create a container in memory to which we can then ***assign*** a value. A value can be one of the aforementioned
 basic data types or other complex data types (i.e. arrays). These values can later be referenced, manipulated, or reassigned throughout the code.
 
-In JavaScript there are three ways to ***declaring*** a variable:
+In JavaScript there are three ways of ***declaring*** a variable:
 * **var**:  Variables declared with 'var' are **function-scoped** meaning the variable is [hoisted] to the top of the function. This allows access to the variable before it is defined.
 * **let**: Variables declared with 'let' are **block-scoped** meaning they are *NOT* [hoisted]. Thus are only available within the block in which they were declared.
 * **const**: Variables declared with 'const' are also **block-scoped**. _Const_ varibales cannot be changed after they have been declared. Note: If the 'const' variable is an object or an array, its properties or elements can still be modified.
