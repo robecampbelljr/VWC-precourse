@@ -23,6 +23,11 @@
   padding: 20px;
 }
 
+.presentation img {
+  width: 700px;
+  border-radius: 10px;
+}
+
 h1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
