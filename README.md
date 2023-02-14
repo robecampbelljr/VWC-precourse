@@ -4,12 +4,11 @@
 This project was prepared as proof of understanding of the following basic programming concepts:
 * Variable assignment
 * Basic Math operations
-* Strings
+* Strings/String Methods
 * Conditional logic
 * Loops
 * Functions
-* Arrays
-* String/Array methods
+* Arrays/Array Methods
 * Objects (properties/methods)
 
 All of the following examples will be based in JavaScript.
