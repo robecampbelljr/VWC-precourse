@@ -1,9 +1,11 @@
 import React from 'react';
+import useFadeInRight from '../../lib/hooks/useFadeInRight';
 
 function Mathblurb() {
+  const fadeInRight = useFadeInRight();
 
   return (
-    <div className="blurb">
+    <div className="blurb" ref={fadeInRight}>
       <h4>JavaScript is capable of basic (and complex) math functions. The basic mathmatical functions are:</h4>
       <ul>
         <li>'+': Addition combines two or more values to produce a new value.</li>

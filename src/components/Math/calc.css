@@ -5,13 +5,6 @@
   border-radius: 10px;
   background-color: rgb(228, 227, 227);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-}
-
-.calc-contaier h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  padding: 10px;
 }
 
 .calc-contaier .calc-area {
