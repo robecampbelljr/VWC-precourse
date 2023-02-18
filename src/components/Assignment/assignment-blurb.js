@@ -1,10 +1,12 @@
-
+import useFadeInLeft from "../../lib/hooks/useFadeInLeft";
 
 function Assignmentblurb() {
 
+  const fadeInLeft = useFadeInLeft();
+
   return(
     <>
-      <div className="blurb">
+      <div className='blurb' ref={fadeInLeft}>
         <h4>To <strong>declare</strong> a variable is to create a container in memory to which we can then <strong>assign</strong> a value. A value can be a
         basic (i.e. string) or complex (i.e. Array) data type. These values can later be referenced, manipulated, or reassigned throughout the code. In JavaScript there are three ways of declaring a variable:</h4>
         <ul>

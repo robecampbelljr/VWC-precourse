@@ -1,0 +1,15 @@
+.string-tool-container {
+  background-color: red;
+  width: auto;
+  height: 350;
+}
+
+input {
+  width: 100%
+}
+
+.index-button-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

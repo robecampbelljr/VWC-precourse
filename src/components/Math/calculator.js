@@ -1,12 +1,15 @@
 import './calc.css';
 import React, { useState } from 'react';
 import { exponent, multiplication, division, addition, subtraction, modulo } from '../../lib/calc-lib';
+import useFadeInLeft from '../../lib/hooks/useFadeInLeft';
 
 function Calculator() {
   let [buttons, setButtons] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
   let [firstNum, setFirstNum] = useState();
   let [secondNum, setSecondNum] = useState();
   let [calcDisplay, setCalcDisplay] = useState('');
+  const fadeInLeft = useFadeInLeft();
+
 
   let addNumToDisplay = (num) => {
     setCalcDisplay(calcDisplay += num);
@@ -49,7 +52,7 @@ function Calculator() {
   }
 
   return (
-    <div className="calc-contaier">
+    <div className="calc-contaier" ref={fadeInLeft}>
       <h2>JavaScript Calculator</h2>
       <textarea className="calc-area" id="calc-area">{calcDisplay}</textarea>
         <div className="calculator">

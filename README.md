@@ -69,7 +69,7 @@ _Example_
 * '**': Exponentiation raises a number to a certain power.
 
 ## Strings/String Methods
-A strign is a series of carachters contained withing a set of single ('') or double ("") quotes. A string is 0 indexed. This means that we can access any character within a string by using that characters index.
+A string is a series of carachters contained withing a set of single ('') or double ("") quotes. A string is 0 indexed. This means that we can access any character within a string by using that characters index.
 
 _Example_
 
