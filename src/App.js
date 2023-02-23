@@ -5,6 +5,12 @@ import Assignmentblurb from './components/Assignment/assignment-blurb';
 import AssignmentImage from './components/Assignment/assignment-image';
 import StringBlurb from './components/Strings/string-blurg';
 import StringTool from './components/Strings/string-tool';
+import ConditionalLogicBlurb from './components/ConditionalLogic/conditional-logic-blurb';
+import ConditionalImages from './components/ConditionalLogic/conditional-images';
+import LoopBlurb from './components/Loops/loop-blurb';
+import FunctionBlurb from './components/Functions/fucntion-blurb';
+import ArrayBlurb from './components/Arrays/array-blurb';
+import ObjectBlurb from './components/Objects/object-blurb';
 
 function App() {
 
@@ -29,6 +35,37 @@ function App() {
         <div className="presentation">
           <StringBlurb />
           <StringTool />
+        </div>
+      </div>
+      <div className="conditional-section">
+        <h1>Conditional Logic</h1>
+        <div className="presentation">
+          <ConditionalImages />
+          <ConditionalLogicBlurb />
+        </div>
+      </div>
+      <div className="loop-section">
+        <h1>Loops</h1>
+        <div className="presentation">
+          <LoopBlurb />
+        </div>
+      </div>
+      <div className="function-section">
+        <h1>Functions</h1>
+        <div className="presentation">
+          <FunctionBlurb />
+        </div>
+      </div>
+      <div className="array-section">
+        <h1>Array/Array Methods</h1>
+        <div className="presentation">
+          <ArrayBlurb />
+        </div>
+      </div>
+      <div className="object-section">
+        <h1>Objects (Properties & Methods)</h1>
+        <div className="presentation">
+          <ObjectBlurb />
         </div>
       </div>
     </div>

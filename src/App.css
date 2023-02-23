@@ -20,16 +20,40 @@
   background-color: aqua;
 }
 
+.loop-section {
+  background-color: aliceblue;
+}
+
+.function-section {
+  background-color: bisque;
+}
+
+.array-section {
+  background-color:darkgray;
+}
+
+.object-section {
+  background-color: aquamarine;
+}
+
 .presentation {
   display: flex;
-  justify-content: space-evenly;
-  align-items:center;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px;
 }
 
 .presentation img {
   width: 700px;
   border-radius: 10px;
+}
+
+.presentation .multi-image-container {
+  width: min-content;
+}
+
+.presentation .multi-image-container img {
+  width: min-content;
 }
 
 h1 {
@@ -40,6 +64,12 @@ h1 {
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   padding: 10px;
 }
