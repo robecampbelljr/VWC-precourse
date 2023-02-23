@@ -5,6 +5,8 @@ import Assignmentblurb from './components/Assignment/assignment-blurb';
 import AssignmentImage from './components/Assignment/assignment-image';
 import StringBlurb from './components/Strings/string-blurg';
 import StringTool from './components/Strings/string-tool';
+import ConditionalLogicBlurb from './components/ConditionalLogic/conditional-logic-blurb';
+import ConditionalImages from './components/ConditionalLogic/conditional-images';
 
 function App() {
 
@@ -29,6 +31,13 @@ function App() {
         <div className="presentation">
           <StringBlurb />
           <StringTool />
+        </div>
+      </div>
+      <div className="conditional-section">
+        <h1>Conditional Logic</h1>
+        <div className="presentation">
+          <ConditionalImages />
+          <ConditionalLogicBlurb />
         </div>
       </div>
     </div>

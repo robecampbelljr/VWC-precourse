@@ -1,15 +1,67 @@
 .string-tool-container {
-  background-color: red;
-  width: auto;
-  height: 350;
+  background-color:deepskyblue;
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input {
   width: 100%
 }
 
-.index-button-row {
+.button-row {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin:10px
+}
+
+.slice-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.slice-box label {
+  width: 100%;
+  text-align: center;
+}
+
+.slice-box button {
+  height: 25px;
+}
+
+.start-bundle {
+  display: block;
+  width: 40px;
+}
+
+.end-bundle {
+  display: block;
+  width: 40px;
+}
+
+.result {
+  margin-left: 10px;
+}
+
+.split-section {
+  width: 55px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.split-section label {
+  text-align: center;
+  margin: 50% auto;
+}
+
+.split-section input {
+  width: 50px;
 }

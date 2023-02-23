@@ -1,6 +1,17 @@
 # VWC-precourse
 [Vets Who Code pre-course work](https://dev.to/vetswhocode/vets-who-code-pre-work-1gld)
+# Install
+NOTE: This assumes you are familiar with basig git commands. It you are not, please refer to the official [git cheat sheet].
 
+1. Fork repository to personal repository
+2. Clone project to computer
+3. Navigate to project parent folder in your terminal
+4. Type in 'npm install' and hit 'Enter'
+5. In the terminal type 'npm start' and hit 'Enter' to run the program
+
+Note: If you wish to run all available tests, navigate to the parent directory in the terminal, type in 'npm test' and hit 'Enter'. The terminal will display all available tests and their status
+
+# Project Outline
 This project was prepared as proof of understanding of the following basic programming concepts:
 * Variable assignment
 * Basic Math operations
@@ -267,6 +278,7 @@ car.go(); // Logs `Position is now '3'`
 ```
 We are able to create properties, and methods to manipulate those properties. See [MDN Objects] documentation for a more indepth discussion on the subject.
 
+[git cheat sheet]: https://education.github.com/git-cheat-sheet-education.pdf
 [hoisted]: https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
 [string methods]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 [array methods]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

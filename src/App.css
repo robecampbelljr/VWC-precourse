@@ -22,14 +22,18 @@
 
 .presentation {
   display: flex;
-  justify-content: space-evenly;
-  align-items:center;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px;
 }
 
 .presentation img {
   width: 700px;
   border-radius: 10px;
+}
+
+.presentation .multi-image-container {
+  width: min-content;
 }
 
 h1 {
@@ -40,6 +44,12 @@ h1 {
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   padding: 10px;
 }
