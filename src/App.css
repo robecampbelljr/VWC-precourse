@@ -20,6 +20,22 @@
   background-color: aqua;
 }
 
+.loop-section {
+  background-color: aliceblue;
+}
+
+.function-section {
+  background-color: bisque;
+}
+
+.array-section {
+  background-color:darkgray;
+}
+
+.object-section {
+  background-color: aquamarine;
+}
+
 .presentation {
   display: flex;
   justify-content: space-around;
@@ -33,6 +49,10 @@
 }
 
 .presentation .multi-image-container {
+  width: min-content;
+}
+
+.presentation .multi-image-container img {
   width: min-content;
 }
 

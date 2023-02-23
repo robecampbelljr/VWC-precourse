@@ -207,7 +207,7 @@ console.log(add(4, 1)); // Logs '5' to the console
 
 Creating functions in this manner also has the added benefit of making our code more **readable**.
 ## Arrays/Array Methods
-Arrays are a complex data type that allowe for the storage and manipulation of varios types of data.
+Arrays are a complex data type that allow for the storage and manipulation of varios types of data.
 Syntacticly we create an array in javascript as follows:
 ```javascript
 let array = [1, 'Apple', 0.5, {willILangMyFirstCodingJob: true}, [1, 2, 3]];
