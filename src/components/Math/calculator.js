@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import { exponent, multiplication, division, addition, subtraction, modulo } from '../../lib/calc-lib';
 import useFadeInLeft from '../../lib/hooks/useFadeInLeft';
 
+/*
+  addition button (Line 46) is currently concatenating strings and NOT adding numbers. This is on the bug list
+*/
+
 function Calculator() {
   let [buttons, setButtons] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
   let [firstNum, setFirstNum] = useState();

@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.App-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .App {
   display: block;
 }
@@ -93,4 +99,29 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  opacity: .80;
+  z-index: 1;
+
+}
+
+.modal .close {
+  background-color: antiquewhite;
+  height: auto;
+  width: auto;
+}
+
+.modal .close:hover {
+  cursor: pointer;
 }
