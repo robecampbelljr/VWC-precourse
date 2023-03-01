@@ -1,7 +1,7 @@
 # VWC-precourse
 [Vets Who Code pre-course work](https://dev.to/vetswhocode/vets-who-code-pre-work-1gld)
 # Install
-NOTE: This assumes you are familiar with basig git commands. It you are not, please refer to the official [git cheat sheet].
+NOTE: This assumes you are familiar with basic git commands. If you are not, please refer to the official [git cheat sheet].
 
 1. Fork repository to personal repository
 2. Clone project to computer
