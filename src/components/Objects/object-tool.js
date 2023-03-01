@@ -3,31 +3,31 @@ import { useState, useEffect } from 'react';
 
 export default function ObjectTool() {
 
-  let [runner, setRunner] = useState();
+  let [car, setCar] = useState();
   let [track, setTrack] = useState();
 
   useEffect(() => {
-    setRunner(runner = document.getElementById('runner'));
-    runner['position'] = runner.offsetLeft;
-    runner['startPosition'] = runner.offsetLeft;
-    runner['trackWidth'] = document.getElementById('track').offsetWidth;
-    runner['endPosition'] = runner.offsetLeft + runner.trackWidth - 100;
-    runner['moveFwd'] = () => {
-      if (runner.position + 10 < runner.endPosition) {
-        runner.position += 10;
+    setCar(car = document.getElementById('car'));
+    car['position'] = car.offsetLeft;
+    car['startPosition'] = car.offsetLeft;
+    car['trackWidth'] = document.getElementById('track').offsetWidth;
+    car['endPosition'] = car.offsetLeft + car.trackWidth - 100;
+    car['moveFwd'] = () => {
+      if (car.position + 10 < car.endPosition) {
+        car.position += 10;
       } else {
-        runner.position = runner.endPosition;
+        car.position = car.endPosition;
       }
-      runner.style.left = `${runner.position}px`;
+      car.style.left = `${car.position}px`;
     };
-    runner['moveBk'] = () => {
-      if (runner.position - 10 > runner.startPosition) {
-        runner.position -= 10;
+    car['moveBk'] = () => {
+      if (car.position - 10 > car.startPosition) {
+        car.position -= 10;
       } else {
-        runner.position = runner.startPosition;
+        car.position = car.startPosition;
       }
 
-      runner.style.left = `${runner.position}px`;
+      car.style.left = `${car.position}px`;
     };
   }, []);
 
@@ -35,12 +35,12 @@ export default function ObjectTool() {
     <div className="object-container">
       <h2>Object Tool</h2>
       <div className="object-buttons">
-        <label>Move The Runner</label>
-        <button onClick={() => {runner.moveFwd();}}>+</button>
-        <button onClick={() => {runner.moveBk();}}>-</button>
+        <label>Move The Car</label>
+        <button onClick={() => {car.moveBk();}}>-</button>
+        <button onClick={() => {car.moveFwd();}}>+</button>
       </div>
       <div id="track" className="track">
-        <div id="runner" className="runner">
+        <div id="car" className="car">
           <div className="ds-ft"></div>
           <div className="ds-rt"></div>
           <div className="car-body"></div>
@@ -50,7 +50,7 @@ export default function ObjectTool() {
           <div className="ps-rt"></div>
         </div>
       </div>
-      <div className="explanation">We have created a 'runner' object that tracks its position, and has the ability to move foreward and backward.</div>
+      <div className="explanation">We have created a 'car' object that tracks its position, and has the ability to move foreward and backward.</div>
     </div>
   )
 }
