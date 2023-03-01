@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 export default function ObjectTool() {
 
   let [car, setCar] = useState();
-  let [track, setTrack] = useState();
 
   useEffect(() => {
     setCar(car = document.getElementById('car'));
