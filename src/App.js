@@ -16,6 +16,7 @@ import LoopForm from './components/Loops/loop-form';
 import FunctionImage from './components/Functions/function-image';
 import { useState, createContext } from 'react';
 import ArrayTool from './components/Arrays/array-tool';
+import ObjectTool from './components/Objects/object-tool';
 
 export const AppContext = createContext();
 
@@ -88,6 +89,7 @@ function App() {
             <h1>Objects (Properties & Methods)</h1>
             <div className="presentation">
               <ObjectBlurb />
+              <ObjectTool />
             </div>
           </div>
         </div>

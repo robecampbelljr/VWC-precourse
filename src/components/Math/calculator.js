@@ -1,7 +1,7 @@
 import './calc.css';
 import React, { useState } from 'react';
 import { exponent, multiplication, division, addition, subtraction, modulo } from '../../lib/calc-lib';
-import useFadeInLeft from '../../lib/hooks/useFadeInLeft';
+import useFadeInLeft from '../../lib/hooks/useFadeInLeft.js';
 
 /*
   addition button (Line 46) is currently concatenating strings and NOT adding numbers. This is on the bug list

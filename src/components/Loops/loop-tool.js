@@ -1,8 +1,8 @@
 import { useState, useContext } from 'react';
-import useFadeInLeft from '../../lib/hooks/useFadeInLeft';
 import useFadeInTop from '../../lib/hooks/useFadeInTop';
 import './loop-tool.css';
 import { AppContext } from '../../App.js';
+import useFadeInRight from '../../lib/hooks/useFadeInRight';
 
 export default function LoopTool() {
 
@@ -10,7 +10,7 @@ export default function LoopTool() {
 
   let [loopToolDisplay, setLoopToolDisplay] = useState('Select a number!');
   let [explanation, setExplanation] = useState('');
-  const fadeInLeft = useFadeInLeft();
+  const fadeInRight = useFadeInRight();
   const fadeInTop = useFadeInTop();
 
   let repeater = () => {
@@ -79,7 +79,7 @@ export default function LoopTool() {
   }
 
   return (
-    <div className="loop-tool-container" ref={fadeInLeft}>
+    <div className="loop-tool-container" ref={fadeInRight}>
       <h2>Loop Tool</h2>
         <h5>'For' Loop:</h5>
         <label>Select number:</label>

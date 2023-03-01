@@ -9,6 +9,7 @@ export default function FunctionBlurb() {
       <p>
         The 'Get Keys' button above uses a function to repeat its block of code.
       </p>
+      <div className="small-note">See './src/components/Loops/loop-tool.js' for code examples</div>
     </div>
   )
 }

@@ -15,6 +15,7 @@ export default function ArrayBlurb() {
           <strong>'.map((value) => callBack)'</strong>: '.map((value) => {})' returns an array of the results of the callBack function applied to each element.
         </li>
       </ul>
+      <div className="small-note">See './src/components/Arrays/array-tool.js' for code example</div>
     </div>
   )
 }
