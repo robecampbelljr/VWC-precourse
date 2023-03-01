@@ -87,11 +87,19 @@ h3 {
   height: 100%;
   width: 600px;
   background-color:beige;
+}
 
+.blurb .small-note {
+  font-size: x-small;
+  margin: 10px 0px 0px 0px;
 }
 
 .blurb h4 {
   font-weight: normal;
+}
+
+.blurb p {
+  margin-top: 10px;
 }
 
 ol,
@@ -111,17 +119,6 @@ ul {
   width: 100vw;
   height: 100vh;
   background-color: grey;
-  opacity: .80;
+  opacity: .97;
   z-index: 1;
-
-}
-
-.modal .close {
-  background-color: antiquewhite;
-  height: auto;
-  width: auto;
-}
-
-.modal .close:hover {
-  cursor: pointer;
 }

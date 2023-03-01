@@ -17,6 +17,7 @@ export default function LoopBlurb() {
           <strong>'while'</strong>: 'while' loops run while a certain condition is true.
         </li>
       </ul>
+      <div className="small-note">See './src/components/Loops/loop-tool.js' for code examples</div>
     </div>
   )
 }

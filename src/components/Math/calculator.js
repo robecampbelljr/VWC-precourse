@@ -37,17 +37,17 @@ function Calculator() {
     setSecondNum(secondNum = calcDisplay.split(`\n`)[2]);
 
     if (mathSymbol === '**') {
-      solution = exponent(firstNum, secondNum);
+      solution = exponent(+firstNum, +secondNum);
     } else if (mathSymbol === '*') {
-      solution = multiplication(firstNum, secondNum);
+      solution = multiplication(+firstNum, +secondNum);
     } else if (mathSymbol === '/') {
-      solution = division(firstNum, secondNum);
+      solution = division(+firstNum, +secondNum);
     } else if (mathSymbol === '+') {
-      solution = addition(firstNum, secondNum);
+      solution = addition(+firstNum, +secondNum);
     } else if (mathSymbol === '-') {
-      solution = subtraction(firstNum, secondNum);
+      solution = subtraction(+firstNum, +secondNum);
     } else if (mathSymbol === '%') {
-      solution = modulo(firstNum, secondNum);
+      solution = modulo(+firstNum, +secondNum);
     }
 
     setCalcDisplay(calcDisplay = '');
@@ -57,7 +57,7 @@ function Calculator() {
 
   return (
     <div className="calc-contaier" ref={fadeInLeft}>
-      <h2>JavaScript Calculator</h2>
+      <h2>Math Tool</h2>
       <textarea className="calc-area" id="calc-area">{calcDisplay}</textarea>
         <div className="calculator">
           <div className="button-container">

@@ -12,16 +12,27 @@ import FunctionBlurb from './components/Functions/fucntion-blurb';
 import ArrayBlurb from './components/Arrays/array-blurb';
 import ObjectBlurb from './components/Objects/object-blurb';
 import LoopTool from './components/Loops/loop-tool';
+import LoopForm from './components/Loops/loop-form';
+import FunctionImage from './components/Functions/function-image';
 import { useState, createContext } from 'react';
+import ArrayTool from './components/Arrays/array-tool';
 
 export const AppContext = createContext();
 
 function App() {
 
   let [isOpen, setIsOpen] = useState(false);
+  let [modalSelect, setModalSelect] = useState('');
+  let [formIsFilled, setFormIsFilled] = useState(false);
+  let [exObj, setExObj] = useState({});
 
   return (
-    <AppContext.Provider value={{isOpen, setIsOpen}}>
+    <AppContext.Provider value={{exObj, setExObj, modalSelect, setModalSelect, formIsFilled, setFormIsFilled, isOpen, setIsOpen}}>
+      {/* Setting up modal for multipurpose use */}
+      {isOpen ? <div className="modal">
+        <LoopForm />
+      </div> : null}
+
       <div className="App-flex">
         <div className="App">
           <div className="assignment-section">
@@ -57,14 +68,12 @@ function App() {
             <div className="presentation">
               <LoopBlurb />
               <LoopTool />
-              {isOpen ? <div className="modal">
-                <div className="close" onClick={() => setIsOpen(isOpen = false)}>X</div>
-              </div> : null}
             </div>
           </div>
           <div className="function-section">
             <h1>Functions</h1>
             <div className="presentation">
+              <FunctionImage />
               <FunctionBlurb />
             </div>
           </div>
@@ -72,6 +81,7 @@ function App() {
             <h1>Array/Array Methods</h1>
             <div className="presentation">
               <ArrayBlurb />
+              <ArrayTool />
             </div>
           </div>
           <div className="object-section">

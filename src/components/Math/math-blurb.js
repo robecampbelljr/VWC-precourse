@@ -16,6 +16,7 @@ function Mathblurb() {
         <li>'**': Exponentiation raises a number to a certain power.</li>
       </ul>
       The calculator demonstraits all of these basic functions.
+      <div className="small-note">See './src/components/Math/calculator.js' for code example</div>
 
     </div>
   )
