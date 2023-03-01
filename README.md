@@ -1,7 +1,7 @@
 # VWC-precourse
 [Vets Who Code pre-course work](https://dev.to/vetswhocode/vets-who-code-pre-work-1gld)
 # Install
-NOTE: This assumes you are familiar with basig git commands. It you are not, please refer to the official [git cheat sheet].
+NOTE: This assumes you are familiar with basic git commands. If you are not, please refer to the official [git cheat sheet].
 
 1. Fork repository to personal repository
 2. Clone project to computer
@@ -9,7 +9,7 @@ NOTE: This assumes you are familiar with basig git commands. It you are not, ple
 4. Type in 'npm install' and hit 'Enter'
 5. In the terminal type 'npm start' and hit 'Enter' to run the program
 
-Note: If you wish to run all available tests, navigate to the parent directory in the terminal, type in 'npm test' and hit 'Enter'. The terminal will display all available tests and their status
+Note: If you wish to run all available tests, navigate to the parent directory in the terminal, type in 'npm test' and hit 'Enter'. The terminal will display all available test options.
 
 # Project Outline
 This project was prepared as proof of understanding of the following basic programming concepts:
