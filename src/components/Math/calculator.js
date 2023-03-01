@@ -1,7 +1,11 @@
 import './calc.css';
 import React, { useState } from 'react';
 import { exponent, multiplication, division, addition, subtraction, modulo } from '../../lib/calc-lib';
-import useFadeInLeft from '../../lib/hooks/useFadeInLeft';
+import useFadeInLeft from '../../lib/hooks/useFadeInLeft.js';
+
+/*
+  addition button (Line 46) is currently concatenating strings and NOT adding numbers. This is on the bug list
+*/
 
 function Calculator() {
   let [buttons, setButtons] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
@@ -33,17 +37,17 @@ function Calculator() {
     setSecondNum(secondNum = calcDisplay.split(`\n`)[2]);
 
     if (mathSymbol === '**') {
-      solution = exponent(firstNum, secondNum);
+      solution = exponent(+firstNum, +secondNum);
     } else if (mathSymbol === '*') {
-      solution = multiplication(firstNum, secondNum);
+      solution = multiplication(+firstNum, +secondNum);
     } else if (mathSymbol === '/') {
-      solution = division(firstNum, secondNum);
+      solution = division(+firstNum, +secondNum);
     } else if (mathSymbol === '+') {
-      solution = addition(firstNum, secondNum);
+      solution = addition(+firstNum, +secondNum);
     } else if (mathSymbol === '-') {
-      solution = subtraction(firstNum, secondNum);
+      solution = subtraction(+firstNum, +secondNum);
     } else if (mathSymbol === '%') {
-      solution = modulo(firstNum, secondNum);
+      solution = modulo(+firstNum, +secondNum);
     }
 
     setCalcDisplay(calcDisplay = '');
@@ -53,7 +57,7 @@ function Calculator() {
 
   return (
     <div className="calc-contaier" ref={fadeInLeft}>
-      <h2>JavaScript Calculator</h2>
+      <h2>Math Tool</h2>
       <textarea className="calc-area" id="calc-area">{calcDisplay}</textarea>
         <div className="calculator">
           <div className="button-container">

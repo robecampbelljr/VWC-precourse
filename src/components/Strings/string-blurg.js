@@ -13,6 +13,7 @@ function StringBlurb() {
         <li><strong>'.split(separater)'</strong>: '.split(separator)' splits the string by the 'separator' and returns an array with each portion at a different index.</li>
       </ul>
       There are many more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string methods</a> available.
+      <div className="small-note">See './src/components/Strings/string-tool.js' for code example</div>
     </div>
   )
 }

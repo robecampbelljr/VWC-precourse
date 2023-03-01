@@ -1,0 +1,95 @@
+.loop-tool-container {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.loop-tool-container input {
+  width: min-content;
+  margin: 0px 5px 5px 5px;
+}
+
+.loop-tool-container label {
+  margin-left: 5px;
+}
+
+.loop-tool-container .result-display {
+  text-align: center;
+  background-color:rgb(251, 252, 252);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+  padding: 5px;
+}
+
+.explanation {
+  text-align: left;
+  margin: 10px;
+  font-size: x-small;
+}
+
+.form-container {
+  background-color: rgba(240, 255, 255, 1);
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.form-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.form-container .header h2{
+  margin-left: 20%;
+}
+
+.form-container button {
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-container label,
+input,
+button {
+  margin: 5px 0px 5px 10px;
+}
+
+.form-container .inputs {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+input {
+  width: 50%;
+  height: auto;
+}
+
+.header .close {
+  margin: 15px 15px 10px 0px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.header .close:hover {
+  cursor: pointer;
+}
+
+.header .close:active {
+  transform: translateY(+5px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+}
+
+h5 {
+  margin-left: 5px;
+}

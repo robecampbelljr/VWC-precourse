@@ -1,0 +1,26 @@
+.array-tool-container {
+  width: 300px;
+  height: auto;
+  background-color:rgb(193, 193, 193);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.array-tool-container label,
+.array-tool-container .result {
+  margin-left: 10px;
+}
+
+.array-tool-container .array-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.array-tool-container .array-row input {
+  width: min-content;
+}
+
+.array-tool-container .array-row button {
+  padding: 5px;
+}

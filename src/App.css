@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.App-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .App {
   display: block;
 }
@@ -81,11 +87,19 @@ h3 {
   height: 100%;
   width: 600px;
   background-color:beige;
+}
 
+.blurb .small-note {
+  font-size: x-small;
+  margin: 10px 0px 0px 0px;
 }
 
 .blurb h4 {
   font-weight: normal;
+}
+
+.blurb p {
+  margin-top: 10px;
 }
 
 ol,
@@ -93,4 +107,18 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  opacity: .97;
+  z-index: 1;
 }
