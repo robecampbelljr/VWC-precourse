@@ -1,5 +1,5 @@
 import './App.css';
-import Calculator from './components/Math/calculator';
+import Calculator from './components/Math/math-tool';
 import Mathblurb from './components/Math/math-blurb';
 import Assignmentblurb from './components/Assignment/assignment-blurb';
 import AssignmentImage from './components/Assignment/assignment-image';
