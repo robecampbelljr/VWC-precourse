@@ -1,4 +1,4 @@
-import './calc.css';
+import './math.css';
 import React, { useState } from 'react';
 import { exponent, multiplication, division, addition, subtraction, modulo } from '../../lib/calc-lib';
 import useFadeInLeft from '../../lib/hooks/useFadeInLeft.js';

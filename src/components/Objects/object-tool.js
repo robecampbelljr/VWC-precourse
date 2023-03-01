@@ -1,9 +1,11 @@
 import './object.css';
 import { useState, useEffect } from 'react';
+import useFadeInRight from '../../lib/hooks/useFadeInRight';
 
 export default function ObjectTool() {
 
   let [car, setCar] = useState();
+  let fadeInRight = useFadeInRight();
 
   useEffect(() => {
     setCar(car = document.getElementById('car'));
@@ -30,7 +32,7 @@ export default function ObjectTool() {
   }, []);
 
   return (
-    <div className="object-container">
+    <div className="object-container" ref={fadeInRight}>
       <h2>Object Tool</h2>
       <div className="object-buttons">
         <label>Move The Car</label>
