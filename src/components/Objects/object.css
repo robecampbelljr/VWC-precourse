@@ -5,6 +5,7 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .object-container .object-buttons {
   display: flex;
   justify-content: center;
@@ -33,8 +34,72 @@
 
 .object-container .runner {
   position:absolute;
-  width: 50px;
+  width: 100px;
   height: 50px;
-  border-radius: 30px;
+}
+
+.object-container .runner .car-body {
   background-color: blueviolet;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.object-container .runner .ds-ft {
+  position: absolute;
+  left: 70%;
+  bottom: 90%;
+  background-color: black;
+  height: 10px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.object-container .runner .ds-rt {
+  position: absolute;
+  left: 0;
+  bottom: 90%;
+  background-color: black;
+  height: 10px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.object-container .runner .ps-ft {
+  position: absolute;
+  left: 70%;
+  bottom: -10%;
+  background-color: black;
+  height: 10px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.object-container .runner .ps-rt {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  background-color: black;
+  height: 10px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.object-container .runner .windshield {
+  position: absolute;
+  bottom: 20%;
+  left: 70%;
+  height: 30px;
+  width: 10px;
+  background-color: aqua;
+}
+
+.object-container .runner .roof {
+  position: absolute;
+  bottom: 18%;
+  left: 12%;
+  border: 1px solid black;
+  height: 32px;
+  width: 50px;
 }

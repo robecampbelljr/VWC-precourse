@@ -11,7 +11,7 @@ export default function ObjectTool() {
     runner['position'] = runner.offsetLeft;
     runner['startPosition'] = runner.offsetLeft;
     runner['trackWidth'] = document.getElementById('track').offsetWidth;
-    runner['endPosition'] = runner.offsetLeft + runner.trackWidth - 50;
+    runner['endPosition'] = runner.offsetLeft + runner.trackWidth - 100;
     runner['moveFwd'] = () => {
       if (runner.position + 10 < runner.endPosition) {
         runner.position += 10;
@@ -40,7 +40,15 @@ export default function ObjectTool() {
         <button onClick={() => {runner.moveBk();}}>-</button>
       </div>
       <div id="track" className="track">
-        <div id="runner" className="runner"></div>
+        <div id="runner" className="runner">
+          <div className="ds-ft"></div>
+          <div className="ds-rt"></div>
+          <div className="car-body"></div>
+          <div className="windshield"></div>
+          <div className="roof" />
+          <div className="ps-ft"></div>
+          <div className="ps-rt"></div>
+        </div>
       </div>
       <div className="explanation">We have created a 'runner' object that tracks its position, and has the ability to move foreward and backward.</div>
     </div>
