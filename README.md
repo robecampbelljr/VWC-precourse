@@ -9,7 +9,7 @@ NOTE: This assumes you are familiar with basic git commands. If you are not, ple
 4. Type in 'npm install' and hit 'Enter'
 5. In the terminal type 'npm start' and hit 'Enter' to run the program
 
-Note: If you wish to run all available tests, navigate to the parent directory in the terminal, type in 'npm test' and hit 'Enter'. The terminal will display all available tests and their status
+Note: If you wish to run all available tests, navigate to the parent directory in the terminal, type in 'npm test' and hit 'Enter'. The terminal will display all available test options.
 
 # Project Outline
 This project was prepared as proof of understanding of the following basic programming concepts:
