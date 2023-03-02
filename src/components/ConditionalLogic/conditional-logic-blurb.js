@@ -9,10 +9,10 @@ export default function ConditionalLogicBlurb() {
       Conditional logic sets parameters that must be fulfilled in order for certain code to execute. Syntactically it is accomplished by one of the two following methods:
       <ul>
         <li>
-          <strong>'if(condition1)...if else(condition2)...else'</strong>: 'if(condition1)...if else(condition2)...else' statements will only execute the code within their respective block if the coresponding conditions are met.
+          <strong>'if(condition1)...if else(condition2)...else'</strong>: 'if(condition1)...if else(condition2)...else' statements will only execute the code within their respective block if the corresponding conditions are met.
         </li>
         <li>
-          <strong>'switch'</strong>: 'switch' statements evaluate and expression and execute code coresponding to the result.
+          <strong>'switch'</strong>: 'switch' statements evaluate an expression and execute code corresponding to the result.
         </li>
       </ul>
     </div>

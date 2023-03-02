@@ -15,17 +15,17 @@ export default function LoopForm() {
     exObj[k1] = v1;
     exObj[k2] = v2;
     setFormIsFilled(formIsFilled = true);
-    setIsOpen(isOpen = false)
+    setIsOpen(isOpen = false);
   }
 
   return (
     <div className="form-container">
       <div className="header">
         <h2>Object Creation</h2>
-        <div className="close" onClick={() => setIsOpen(isOpen = false)}>X</div>
+        <button className="close" onClick={() => setIsOpen(isOpen = false)}>X</button>
       </div>
       <h5>Key/Value Pairs</h5>
-      <div className="explanation">Objects use key/value pairs to store information. We can referene these values or <strong>properties</strong> by referncing the <strong>key</strong> associated with the property. Lets create a simple object!</div>
+      <div className="explanation">Objects use key/value pairs to store information. We can referene these values or <strong>properties</strong> by referncing the <strong>key</strong> associated with the property. Let's create a simple object!</div>
       <div className="inputs">
         <div className="input-keys">
           <label>Key 1:</label>

@@ -12,7 +12,7 @@ export default function ObjectTool() {
     car['position'] = car.offsetLeft;
     car['startPosition'] = car.offsetLeft;
     car['trackWidth'] = document.getElementById('track').offsetWidth;
-    car['endPosition'] = car.offsetLeft + car.trackWidth - 100; // Subtracting 100px for the width of the 'car'
+    car['endPosition'] = car.offsetLeft + car.trackWidth - 100; // Subtracting 100px for the length of the 'car'
     car['moveFwd'] = () => {
       if (car.position + 20 < car.endPosition) {
         car.position += 20;
