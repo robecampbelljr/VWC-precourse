@@ -26,12 +26,6 @@
   background-color: rgb(147, 147, 147);
 }
 
-.object-container .track .rail {
-  display: block;
-  height: 50px;
-  width: 100%;
-}
-
 .object-container .car {
   position:absolute;
   width: 100px;

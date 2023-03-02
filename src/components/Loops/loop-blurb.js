@@ -11,7 +11,7 @@ export default function LoopBlurb() {
           <strong>'for'</strong>: 'for' loops repeat a block of code until a condition is met.
         </li>
         <li>
-          <strong>'for...in'</strong>: 'for...in' loops are used to iterate thrugh objects and enables you to access each key and its property.
+          <strong>'for...in'</strong>: 'for...in' loops are used to iterate through objects and enables you to access each key and its property.
         </li>
         <li>
           <strong>'while'</strong>: 'while' loops run while a certain condition is true.
