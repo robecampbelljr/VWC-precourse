@@ -18,7 +18,7 @@
 }
 
 .array-tool-container .array-row input {
-  width: min-content;
+  width:40px;
 }
 
 .array-tool-container .array-row button {
